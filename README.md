@@ -8,4 +8,4 @@ In the project directory, you can run:
 
 ### `npm start`
 
-### Live Site Link:
+### Live Site Link: https://educal-tech.netlify.app/
