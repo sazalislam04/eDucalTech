@@ -17,6 +17,7 @@ html {
 
 .active {
   position: relative;
+  color: blue;
 }
 .active::before {
   content: "";
