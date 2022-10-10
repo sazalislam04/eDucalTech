@@ -36,7 +36,7 @@ const Cart = () => {
 
   return (
     <div
-      className="flex flex-col mx-auto max-w-3xl shadow-xl p-6 mt-6 mb-6 rounded space-y-4 sm:p-10 dark:bg-gray-900 dark:text-gray-100"
+      className="flex flex-col mx-auto max-w-3xl shadow-md p-6 mt-6 mb-6 rounded space-y-4 sm:p-10 dark:bg-gray-900 dark:text-gray-100"
       data-aos="flip-left"
       data-aos-duration="1000"
     >
@@ -61,14 +61,14 @@ const Cart = () => {
           Not including taxes and shipping costs
         </p>
       </div>
-      <div className="flex justify-center space-x-4">
+      <div className="flex flex-wrap justify-center  space-x-4">
         <Link to="/courses">
           <button
             type="button"
-            className="px-6 py-2 border rounded-md border-violet-400"
+            className="px-6 py-2 border rounded-md border-violet-400 mb-3 md:mb-0"
           >
             Back
-            <span className="sr-only sm:not-sr-only"> to Courses</span>
+            <span className="sm:not-sr-only"> to Courses</span>
           </button>
         </Link>
         <Link to={cart.length === 0 ? "/cart" : "/login"}>
@@ -77,7 +77,7 @@ const Cart = () => {
             type="button"
             className="px-6 py-2 border rounded-md bg-violet-400 text-gray-100 dark:border-violet-400"
           >
-            <span className="sr-only sm:not-sr-only">Placed Order</span>
+            <span className="sm:not-sr-only">Placed Order</span>
           </button>
         </Link>
       </div>
