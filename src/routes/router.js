@@ -6,6 +6,8 @@ import Courses from "../components/Courses";
 import Error from "../components/Error";
 import Home from "../components/Home";
 import Login from "../components/Login";
+import Pricing from "../components/Pricing";
+import Review from "../components/Review";
 import Root from "../components/Root";
 import { loadData } from "../loaders/loadData";
 
@@ -36,7 +38,16 @@ export const router = createBrowserRouter([
         path: "/cart",
         element: <Cart />,
       },
+      {
+        path: "/price",
+        element: <Pricing />,
+      },
     ],
+  },
+
+  {
+    path: "/review",
+    element: <Review />,
   },
   {
     path: "/login",

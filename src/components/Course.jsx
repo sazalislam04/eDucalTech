@@ -1,9 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Course = ({ course, handleAddToDb }) => {
   const { author, lesson, name, picture, price, rating } = course;
   return (
-    <div className="flex flex-col p-6 space-y-6 overflow-hidden rounded-lg shadow-md bg-gray-100 text-gray-800">
+    <div
+      className="flex flex-col p-6 space-y-6 overflow-hidden rounded-lg shadow-md bg-gray-100 text-gray-800"
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+    >
       <div className="flex items-center space-x-4">
         <img
           alt=""
@@ -100,26 +105,28 @@ const Course = ({ course, handleAddToDb }) => {
           </button>
         </div>
         <div className="space-x-2">
-          <button
-            type="button"
-            className="bg-blue-500 text-white px-6 py-1 rounded flex items-center"
-          >
-            <span className="uppercase mr-2">Details</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
+          <Link to="/review">
+            <button
+              type="button"
+              className="bg-blue-500 text-white px-6 py-1 rounded flex items-center"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"
-              />
-            </svg>
-          </button>
+              <span className="uppercase mr-2">Review</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"
+                />
+              </svg>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

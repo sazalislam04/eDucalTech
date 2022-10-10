@@ -16,14 +16,19 @@ const Login = () => {
 
   const handleClick = () => {
     if (login) {
-      toast.success("Successfully placed in order", { autoClose: 700 });
+      toast.success("Successfully placed in order!", { autoClose: 700 });
     } else {
       toast.warning("please enter email and password", { autoClose: 500 });
     }
   };
 
   return (
-    <div className="flex flex-col w-full mx-auto mt-20 rounded max-w-md p-12 space-y-4 text-center text-gray-900 bg-gray-200 shadow-xl">
+    <div
+      className="flex flex-col w-full mx-auto mt-20 rounded max-w-md p-12 space-y-4 text-center text-gray-900 bg-gray-200 shadow-xl"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1000"
+    >
       <h1 className="text-3xl font-semibold">Sign in to your account</h1>
       <a className="text-sm text-gray-400" href="/">
         Or start your free trial

@@ -35,7 +35,11 @@ const Cart = () => {
   };
 
   return (
-    <div className="flex flex-col mx-auto max-w-3xl shadow-xl p-6 mt-6 mb-6 rounded space-y-4 sm:p-10 dark:bg-gray-900 dark:text-gray-100">
+    <div
+      className="flex flex-col mx-auto max-w-3xl shadow-xl p-6 mt-6 mb-6 rounded space-y-4 sm:p-10 dark:bg-gray-900 dark:text-gray-100"
+      data-aos="flip-left"
+      data-aos-duration="1000"
+    >
       <h2 className="text-xl font-semibold text-center">
         {cart.length ? "Review Your Cart" : "Your cart is Empty!"}
       </h2>
