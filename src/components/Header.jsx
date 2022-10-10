@@ -108,7 +108,7 @@ const Header = () => {
         </button>
 
         {open && (
-          <div className="w-full sm:w-9/12 lg:hidden absolute top-10 left-[50%] translate-x-[-50%]">
+          <div className="w-full sm:w-9/12 z-10 lg:hidden absolute top-10 left-[50%] translate-x-[-50%]">
             <div className="p-5 bg-white border rounded shadow-xl">
               <div className="flex items-center justify-between mb-4">
                 <div>
